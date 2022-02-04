@@ -5,4 +5,4 @@ Read more about the Zendesk App Tools: https://developer.zendesk.com/apps/docs/a
 
 Just 
 1. `docker build -t zat .`
-2. `docker run -v `pwd`:/data -it pindar/zat zat --help`
+2. `docker run --rm -it -v pwd:/data  -p 4567:4567/tcp --publish-all=true zat:latest bash`
